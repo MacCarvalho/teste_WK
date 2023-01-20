@@ -1,0 +1,31 @@
+object dm: Tdm
+  Height = 247
+  Width = 548
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=wk'
+      'User_Name=root'
+      'Password=Kdz102030'
+      'Server=localhost'
+      'DriverID=mySQL')
+    LoginPrompt = False
+    BeforeConnect = FDConnection1BeforeConnect
+    Left = 96
+    Top = 56
+  end
+  object mysqlDrive: TFDPhysMySQLDriverLink
+    VendorLib = 'C:\Users\mateu\Desktop\Wk\db\libmysql_32.dll'
+    Left = 344
+    Top = 48
+  end
+  object qryView: TFDQuery
+    Connection = FDConnection1
+    Left = 112
+    Top = 144
+  end
+  object qryExec: TFDQuery
+    Connection = FDConnection1
+    Left = 232
+    Top = 144
+  end
+end

@@ -1,0 +1,135 @@
+object frmCadClienteProduto: TfrmCadClienteProduto
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro de Cliente e Produto'
+  ClientHeight = 480
+  ClientWidth = 511
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object GroupBox1: TGroupBox
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 491.000000000000000000
+    Size.Height = 145.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Cliente'
+    TabOrder = 1
+    object edNomeCliente: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 0
+      Position.X = 15.000000000000000000
+      Position.Y = 25.000000000000000000
+      Margins.Left = 15.000000000000000000
+      Margins.Top = 25.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Size.Width = 461.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Nome'
+    end
+    object Layout1: TLayout
+      Align = Top
+      Margins.Left = 15.000000000000000000
+      Margins.Top = 15.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Position.X = 15.000000000000000000
+      Position.Y = 62.000000000000000000
+      Size.Width = 461.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 38
+      object edCidadeCliente: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 1
+        Margins.Right = 20.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Cidade'
+      end
+      object edUFCliente: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Position.X = 361.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'UF'
+      end
+    end
+    object btAdicionarCliente: TButton
+      Align = Center
+      Size.Width = 108.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Adicionar'
+      OnClick = btAdicionarClienteClick
+    end
+  end
+  object GroupBox2: TGroupBox
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 175.000000000000000000
+    Size.Width = 491.000000000000000000
+    Size.Height = 114.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Produto'
+    TabOrder = 0
+    object Layout2: TLayout
+      Align = Top
+      Margins.Left = 15.000000000000000000
+      Margins.Top = 25.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Position.X = 15.000000000000000000
+      Position.Y = 25.000000000000000000
+      Size.Width = 461.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 36
+      object edDescProduto: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Right = 20.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Descri'#231#227'o'
+      end
+      object edValorProduto: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 1
+        Position.X = 361.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Valor'
+      end
+    end
+    object btAdicionarProduto: TButton
+      Align = Center
+      Size.Width = 108.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Adicionar'
+      OnClick = btAdicionarProdutoClick
+    end
+  end
+end

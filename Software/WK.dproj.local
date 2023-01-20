@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/11/30 10:10:38.000.876,=C:\Users\mateu\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/09 09:15:00.000.431,=C:\Users\mateu\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/05 17:15:25.000.983,=C:\Users\mateu\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/19 23:48:34.000.122,=C:\Users\mateu\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/19 23:52:58.000.917,C:\Users\mateu\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\mateu\Desktop\Wk\Software\src\View\View.Main.pas</Transaction>
+    <Transaction>2023/01/19 23:52:58.000.917,C:\Users\mateu\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\mateu\Desktop\Wk\Software\src\View\View.Main.fmx</Transaction>
+    <Transaction>2023/01/19 23:53:08.000.943,C:\Users\mateu\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\mateu\Desktop\Wk\Software\WK.dproj</Transaction>
+    <Transaction>2023/01/19 23:53:59.000.425,=C:\Users\mateu\Desktop\Wk\Software\Unit1.pas</Transaction>
+    <Transaction>2023/01/19 23:55:24.000.262,C:\Users\mateu\Desktop\Wk\Software\Unit1.dfm=C:\Users\mateu\Desktop\Wk\Software\src\Model\Model.Connection.dfm</Transaction>
+    <Transaction>2023/01/19 23:55:24.000.262,C:\Users\mateu\Desktop\Wk\Software\Unit1.pas=C:\Users\mateu\Desktop\Wk\Software\src\Model\Model.Connection.pas</Transaction>
+    <Transaction>2023/01/20 00:30:18.000.145,=C:\Users\mateu\Desktop\Wk\Software\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 00:30:36.000.738,C:\Users\mateu\Desktop\Wk\Software\Unit1.pas=C:\Users\mateu\Desktop\Wk\Software\src\View\View.Cliente_Produto.pas</Transaction>
+    <Transaction>2023/01/20 00:30:36.000.738,C:\Users\mateu\Desktop\Wk\Software\Unit1.fmx=C:\Users\mateu\Desktop\Wk\Software\src\View\View.Cliente_Produto.fmx</Transaction>
+    <Transaction>2023/01/20 09:48:28.919,=C:\Users\mateu\Desktop\Wk\Software\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 09:48:43.283,C:\Users\mateu\Desktop\Wk\Software\src\View\View.Pedido.pas=C:\Users\mateu\Desktop\Wk\Software\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 09:48:43.283,C:\Users\mateu\Desktop\Wk\Software\src\View\View.Pedido.fmx=C:\Users\mateu\Desktop\Wk\Software\Unit1.fmx</Transaction>
+    <Transaction>2023/01/20 09:56:33.880,=C:\Users\mateu\Desktop\Wk\Software\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 09:56:59.736,C:\Users\mateu\Desktop\Wk\Software\src\Controller\Controller.PreparaQuery.pas=C:\Users\mateu\Desktop\Wk\Software\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 18:40:24.616,=C:\Users\mateu\Desktop\Wk\Software\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 18:41:13.456,C:\Users\mateu\Desktop\Wk\Software\src\View\View.ProcuraPedido.fmx=C:\Users\mateu\Desktop\Wk\Software\Unit1.fmx</Transaction>
+    <Transaction>2023/01/20 18:41:13.456,C:\Users\mateu\Desktop\Wk\Software\src\View\View.ProcuraPedido.pas=C:\Users\mateu\Desktop\Wk\Software\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

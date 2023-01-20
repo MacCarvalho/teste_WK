@@ -1,0 +1,360 @@
+object frmPedido: TfrmPedido
+  Left = 0
+  Top = 0
+  Caption = 'Pedido de Venda'
+  ClientHeight = 480
+  ClientWidth = 779
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object lytGeral: TLayout
+    Align = Client
+    Size.Width = 779.000000000000000000
+    Size.Height = 253.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+  end
+  object lytop: TLayout
+    Align = Top
+    Size.Width = 779.000000000000000000
+    Size.Height = 177.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lytCliente: TLayout
+      Align = Top
+      Position.Y = 67.000000000000000000
+      Size.Width = 779.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object cbxCliente: TComboEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        ItemHeight = 19.000000000000000000
+        ItemIndex = -1
+        TextSettings.HorzAlign = Center
+        Margins.Top = 13.000000000000000000
+        Margins.Bottom = 15.000000000000000000
+        Size.Width = 521.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        OnKeyDown = cbxClienteKeyDown
+      end
+      object Label2: TLabel
+        Align = Left
+        Margins.Left = 15.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 15.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Cliente:'
+        TabOrder = 2
+      end
+      object edData: TDateEdit
+        Date = 44946.000000000000000000
+        Align = Right
+        Margins.Top = 13.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 15.000000000000000000
+        Position.X = 664.000000000000000000
+        Position.Y = 13.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        TextSettings.HorzAlign = Center
+      end
+      object Label3: TLabel
+        Align = Right
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 605.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Data:'
+        TabOrder = 1
+      end
+    end
+    object Label1: TLabel
+      Align = Top
+      StyledSettings = [Family]
+      Size.Width = 779.000000000000000000
+      Size.Height = 67.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 36.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claDarkgreen
+      TextSettings.HorzAlign = Center
+      Text = 'PEDIDO DE VENDA'
+      TabOrder = 1
+    end
+    object lytProdutos: TLayout
+      Align = Client
+      Size.Width = 779.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Label4: TLabel
+        Align = Left
+        Margins.Left = 15.000000000000000000
+        Position.X = 15.000000000000000000
+        Size.Width = 59.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Produto:'
+        TabOrder = 0
+      end
+      object cbxProduto: TComboEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 1
+        CanParentFocus = True
+        ItemHeight = 19.000000000000000000
+        ItemIndex = -1
+        TextSettings.HorzAlign = Center
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 15.000000000000000000
+        Size.Width = 357.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        OnKeyUp = cbxProdutoKeyUp
+      end
+      object Layout2: TLayout
+        Align = Right
+        Position.X = 441.000000000000000000
+        Size.Width = 248.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object edQTDEProduto: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Left
+          TabOrder = 2
+          Text = '1'
+          TextSettings.HorzAlign = Center
+          Position.X = 41.000000000000000000
+          Position.Y = 15.000000000000000000
+          Margins.Top = 15.000000000000000000
+          Margins.Bottom = 15.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          OnKeyDown = edQTDEProdutoKeyDown
+        end
+        object Label5: TLabel
+          Align = Left
+          Size.Width = 41.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'QTDE:'
+          TabOrder = 3
+        end
+        object edValorProduto: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Left
+          TabOrder = 0
+          TextSettings.HorzAlign = Center
+          Position.X = 127.000000000000000000
+          Position.Y = 15.000000000000000000
+          Margins.Top = 15.000000000000000000
+          Margins.Bottom = 15.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Valor do produto'
+          OnKeyDown = edValorProdutoKeyDown
+        end
+        object Label6: TLabel
+          Align = Left
+          Margins.Left = 15.000000000000000000
+          Position.X = 86.000000000000000000
+          Size.Width = 41.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Valor:'
+          TabOrder = 1
+        end
+      end
+      object btAdicionarGrid: TButton
+        Align = MostRight
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 689.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Adicionar'
+        OnClick = btAdicionarGridClick
+      end
+    end
+  end
+  object lytgrid: TLayout
+    Align = Client
+    Size.Width = 779.000000000000000000
+    Size.Height = 253.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Grid_Produtos: TStringGrid
+      Align = Client
+      CanFocus = True
+      ClipChildren = True
+      Margins.Left = 15.000000000000000000
+      Margins.Right = 15.000000000000000000
+      PopupMenu = ppMenuGrid
+      Size.Width = 749.000000000000000000
+      Size.Height = 253.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+      Viewport.Width = 729.000000000000000000
+      Viewport.Height = 228.000000000000000000
+    end
+  end
+  object lytResumo: TLayout
+    Align = Bottom
+    HitTest = True
+    Position.Y = 430.000000000000000000
+    Size.Width = 779.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object lbTotal: TLabel
+      Align = Right
+      AutoSize = True
+      StyledSettings = [Family]
+      Margins.Right = 15.000000000000000000
+      Position.X = 529.000000000000000000
+      Size.Width = 235.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claCornflowerblue
+      TextSettings.HorzAlign = Trailing
+      Text = 'Total: R$: 0.00'
+      TabOrder = 0
+    end
+    object btGravar: TButton
+      Align = Left
+      Enabled = False
+      Margins.Left = 15.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 15.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 146.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Gravar pedido'
+      OnClick = btGravarClick
+    end
+    object btLocalizarPedido: TButton
+      Align = Center
+      Size.Width = 146.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Localizar Pedido'
+      OnClick = btLocalizarPedidoClick
+    end
+  end
+  object tbmem: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 472
+    Top = 224
+    object tbmemcodigo: TIntegerField
+      FieldName = 'codigo'
+    end
+    object tbmemdescricao: TStringField
+      FieldName = 'descricao'
+      Size = 255
+    end
+    object tbmemqtde: TCurrencyField
+      FieldName = 'qtde'
+    end
+    object tbmemvalor_unitario: TCurrencyField
+      FieldName = 'valor_unitario'
+    end
+    object tbmemvalor_total: TCurrencyField
+      FieldName = 'valor_total'
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = tbmem
+    ScopeMappings = <>
+    Left = 392
+    Top = 200
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid_Produtos
+      Columns = <
+        item
+          MemberName = 'codigo'
+          Header = 'C'#243'digo'
+        end
+        item
+          MemberName = 'descricao'
+          Header = 'Descri'#231#227'o'
+          TextWidth = 50
+        end
+        item
+          MemberName = 'qtde'
+          Header = 'QTDE'
+        end
+        item
+          MemberName = 'valor_unitario'
+          Header = 'Valor Unit'#225'rio'
+          TextWidth = 20
+        end
+        item
+          MemberName = 'valor_total'
+          Header = 'Valor Total'
+          TextWidth = 20
+        end>
+    end
+  end
+  object tmConsulta: TTimer
+    Interval = 500
+    OnTimer = tmConsultaTimer
+    Left = 608
+    Top = 24
+  end
+  object ppMenuGrid: TPopupMenu
+    Left = 671
+    Top = 401
+    object ppMEditar: TMenuItem
+      Text = 'Editar'
+      OnClick = ppMEditarClick
+    end
+    object mmIExcluir: TMenuItem
+      Text = 'Excluir'
+      OnClick = mmIExcluirClick
+    end
+  end
+end

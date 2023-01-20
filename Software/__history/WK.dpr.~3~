@@ -1,0 +1,16 @@
+program WK;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  View.Main in 'src\View\View.Main.pas' {frmMain},
+  Model.Connection in 'src\Model\Model.Connection.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmMain, frmMain);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.Run;
+end.

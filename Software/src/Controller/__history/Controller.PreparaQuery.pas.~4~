@@ -1,0 +1,21 @@
+unit Controller.PreparaQuery;
+
+interface
+
+procedure ViewSQL(SQL: string);
+
+implementation
+
+uses Model.Connection;
+
+procedure ViewSQL(SQL: string);
+begin
+  dm.qryView.Close;
+  dm.qryView.SQL.Clear;
+  dm.qryView.SQL.Add(sql);
+  dm.qryView.Open;
+end;
+
+end.
+
+

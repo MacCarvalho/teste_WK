@@ -1,0 +1,132 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Teste WK'
+  ClientHeight = 494
+  ClientWidth = 708
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 344.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Produto e cliente'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 120.000000000000000000
+    Position.Y = 256.000000000000000000
+    TabOrder = 2
+    Text = 'Button2'
+    OnClick = Button2Click
+  end
+  object Rectangle1: TRectangle
+    Position.X = 344.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    object Path1: TPath
+      Align = Left
+      HitTest = False
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Expander1: TExpander
+    Align = Bottom
+    IsExpanded = False
+    Margins.Left = 15.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Margins.Bottom = 15.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 454.000000000000000000
+    ShowCheck = False
+    Size.Width = 678.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Configura'#231#245'es'
+    TabOrder = 4
+    ContentSize = '117'
+    object edBancoDados: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Text = 'wk'
+      Position.X = 57.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 123.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 41.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Banco'
+      TabOrder = 5
+    end
+    object edUsuario: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Text = 'root'
+      Position.X = 57.000000000000000000
+      Position.Y = 38.000000000000000000
+      Size.Width = 123.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 39.000000000000000000
+      Size.Width = 41.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Usuario'
+      TabOrder = 3
+    end
+    object edSenha: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Password = True
+      Text = 'Kdz102030'
+      Position.X = 57.000000000000000000
+      Position.Y = 68.000000000000000000
+      Size.Width = 123.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label3: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 70.000000000000000000
+      Size.Width = 41.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Senha'
+      TabOrder = 1
+    end
+    object btTestarConexao: TButton
+      Position.X = 528.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Testar Conex'#227'o'
+      OnClick = btTestarConexaoClick
+    end
+  end
+end

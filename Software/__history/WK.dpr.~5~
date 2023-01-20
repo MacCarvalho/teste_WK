@@ -1,0 +1,18 @@
+program WK;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  View.Main in 'src\View\View.Main.pas' {frmMain},
+  Model.Connection in 'src\Model\Model.Connection.pas' {dm: TDataModule},
+  View.Cliente_Produto in 'src\View\View.Cliente_Produto.pas' {frmCadClienteProduto};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmMain, frmMain);
+  Application.CreateForm(Tdm, dm);
+  Application.CreateForm(TfrmCadClienteProduto, frmCadClienteProduto);
+  Application.Run;
+end.

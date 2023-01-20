@@ -1,0 +1,16 @@
+unit Controller.PreparaQuery;
+
+interface
+
+procedure SQL(SQL: string);
+
+implementation
+
+procedure SQL(SQL: string);
+begin
+
+end;
+
+end.
+
+  uses Model.Connection;
